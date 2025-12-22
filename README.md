@@ -72,6 +72,7 @@ Average hacking enjoyer
  - ```signtool sign /fd SHA256 /f cert.pfx /p <password> /tr http://timestamp.digicert.com /td SHA256 RootLoader.efi```
  - ```openssl x509 -outform DER -in public.crt -out cert.cer```
  - put ```cert.cer``` into a FAT32 usb drive, enroll it in BIOS accordingly
+ - enroll ```cert.cer``` in bios for something like "secure boot DB" (there are usually also PK, KEK and DBX, but only DB is needed)
 
 # credits
  - [drvmap](https://github.com/not-wlan/drvmap)
